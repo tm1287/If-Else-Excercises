@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="maraligat.com.if_else_exercises.MainActivity">
+
+    <TextView
+        android:id="@+id/hundredTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="22dp"
+        android:text="N > 100:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hundredEditText"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Type input here"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/hundredTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hundredButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TEST IT!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toEndOf="@+id/hundredEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/oddTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Odd:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hundredTextView" />
+
+    <EditText
+        android:id="@+id/oddEditText"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Type input here"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/oddTextView"
+        app:layout_constraintTop_toBottomOf="@+id/hundredEditText" />
+
+    <Button
+        android:id="@+id/oddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="TEST IT!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toEndOf="@+id/oddEditText"
+        app:layout_constraintTop_toBottomOf="@+id/hundredButton" />
+
+    <TextView
+        android:id="@+id/divTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:text="Div. by"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oddTextView" />
+
+    <EditText
+        android:id="@+id/divEditText"
+        android:layout_width="182dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Type input here"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/divTextView"
+        app:layout_constraintTop_toBottomOf="@+id/oddEditText" />
+
+    <Button
+        android:id="@+id/divButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="TEST IT!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toEndOf="@+id/divEditText"
+        app:layout_constraintTop_toBottomOf="@+id/oddButton" />
+
+    <TextView
+        android:id="@+id/movieTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Movie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divTextView" />
+
+    <EditText
+        android:id="@+id/movieEditText"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Type input here"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/movieTextView"
+        app:layout_constraintTop_toBottomOf="@+id/divEditText" />
+
+    <Button
+        android:id="@+id/movieButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TEST IT!"
+        app:layout_constraintStart_toEndOf="@+id/movieEditText"
+        app:layout_constraintTop_toBottomOf="@+id/divButton" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieEditText" />
+</android.support.constraint.ConstraintLayout>
